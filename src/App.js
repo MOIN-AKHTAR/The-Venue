@@ -3,6 +3,7 @@ import {ThemeProvider} from '@material-ui/core/styles';
 import Header from './Components/Header';
 import {theme} from './Theme';
 import Featured from './Components/Featured';
+import Vunue from './Components/Vunue';
 import  './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <div style={{height:"1500px",background:'cornflowerblue'}}>
       <Header setDrawer={setDrawer} openDrawer={openDrawer} changeHeaderColor={changeHeaderColor}/>
       <Featured/>
+      <Vunue/>
     </div>
     </ThemeProvider>
   );

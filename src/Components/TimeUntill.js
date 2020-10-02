@@ -99,7 +99,6 @@ export default function TimeUntill() {
                  <div className={classes.timeUntill_time} style={{
                  borderRight:"none",
                  paddingRight:"0px",
-                 marginRight:"0px"
              }}>
                     {sec}
                  </div>
