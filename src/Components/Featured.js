@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core';
-import Carousel from './Carousel'
+import Carousel from './Carousel';
+import TimeUntill from './TimeUntill';
 
 const useStyles=makeStyles((theme)=>({
     featured:{
@@ -32,6 +33,7 @@ export default function Featured() {
                      Ariana Grande
                 </div>
             </div>
+            <TimeUntill/>
         </div>
     )
 }
