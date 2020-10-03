@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import {theme} from './Theme';
 import Featured from './Components/Featured';
 import Vunue from './Components/Vunue';
+import Highlight from './Components/Highlight';
 import  './App.css';
 
 function App() {
@@ -24,10 +25,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-    <div style={{height:"1500px",background:'cornflowerblue'}}>
+    <div style={{height:"1500px"}}>
       <Header setDrawer={setDrawer} openDrawer={openDrawer} changeHeaderColor={changeHeaderColor}/>
       <Featured/>
       <Vunue/>
+      <Highlight/>
     </div>
     </ThemeProvider>
   );

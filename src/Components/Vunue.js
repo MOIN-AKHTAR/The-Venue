@@ -12,7 +12,7 @@ const useStyles=makeStyles({
     },
     vunueWrapper:{
         width:"900px",
-        margin:"auto"
+        margin:"auto",
     },
     mainWrapper:{
         display:"flex",
@@ -40,7 +40,6 @@ const useStyles=makeStyles({
         width:"100px",
         height:"100px",
         transform:"translate(45deg)",
-        border:"1px solid #FFF",
         position:"absolute",
         left:"100px",
         top:"-57px",

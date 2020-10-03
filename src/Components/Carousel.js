@@ -8,7 +8,9 @@ import img3 from '../Assets/slide_three.jpg';
 
 const useStyles=makeStyles({
     carouselImg:{
-        backgroundSize:"cover"
+        backgroundSize:"contain",
+        backgroundRepeat:"no-repeat",
+        backgroundPosition:"center"
     }
 })
 
