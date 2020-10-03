@@ -29,7 +29,7 @@ const useStyles=makeStyles({
         padding:"50px 0px"
     },
     left:{
-        paddingRight:"50px"
+        paddingRight:"70px"
     },
     right:{
         lineHeight:"28px",
@@ -61,7 +61,7 @@ useEffect(() => {
             <div className={classes.discount_Wrapper}>
             <Fade onReveal={ () =>  increaserPercentage() }>
                  <div className={classes.left}>
-                  <h1 style={{fontSize:"70px",color:"#d93d00"}}>{percentage}%</h1>  
+                  <h1 style={{fontSize:"70px",color:"#d93d00",fontWeight:"normal"}}>{percentage}%</h1>  
                 <h3 style={{fontSize:"30px",fontWeight:"normal"}}>OFF</h3>
                  </div>
              </Fade>
@@ -69,7 +69,7 @@ useEffect(() => {
                   <div className={classes.right}>
                            <h3>Purchase tickets before 1st January 2021</h3>
                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ipsum nulla eligendi porro optio doloribus mollitia quasi quia. Necessitatibus iusto laudantium cum iure nobis magnam aliquid minus sint animi suscipit!</p>
-                <Button disableRipple disableElevation variant="contained" color="secondary">Purchase Ticket</Button>
+                <Button disableRipple disableElevation variant="outlined" color="secondary">Purchase Ticket</Button>
                   </div>
                   </Slide>
             </div>

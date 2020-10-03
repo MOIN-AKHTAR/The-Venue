@@ -5,6 +5,7 @@ import {theme} from './Theme';
 import Featured from './Components/Featured';
 import Vunue from './Components/Vunue';
 import Highlight from './Components/Highlight';
+import Pricing from './Components/Pricing';
 import  './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Featured/>
       <Vunue/>
       <Highlight/>
+      <Pricing/>
     </div>
     </ThemeProvider>
   );
