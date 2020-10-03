@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from '@material-ui/core/IconButton'
 import {makeStyles} from '@material-ui/core';
-import Drawer from './Drawer'
+import Drawer from './Drawer';
 
 const useStyles=makeStyles((theme)=>({
     right:{

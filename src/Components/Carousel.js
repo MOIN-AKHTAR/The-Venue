@@ -5,6 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import img1 from '../Assets/slide_one.jpg';
 import img2 from '../Assets/slide_two.jpg';
 import img3 from '../Assets/slide_three.jpg';
+import {Element} from 'react-scroll'
 
 const useStyles=makeStyles({
     carouselImg:{
@@ -19,6 +20,7 @@ export default function CarouselCustom() {
 const renderArrowPrev= () =>null;
 const renderArrowNext=() =>null;
     return (
+    <Element name="carousel" high={"-80px"}>
         <div style={{height:`${window.innerHeight}px`,overflow:"hidden"}}>
             <Carousel 
             autoPlay
@@ -52,6 +54,7 @@ const renderArrowNext=() =>null;
                 ></div>
             </Carousel>
         </div>
+    </Element>
     )
 }
 

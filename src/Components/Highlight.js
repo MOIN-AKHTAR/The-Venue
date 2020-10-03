@@ -1,7 +1,8 @@
 import React,{useState,useEffect,useCallback} from 'react';
 import {makeStyles,Button} from "@material-ui/core";
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide'
+import Slide from 'react-reveal/Slide';
+import {Element} from 'react-scroll'
 
 
 const useStyles=makeStyles({
@@ -53,6 +54,7 @@ useEffect(() => {
     }, 30);
 }, [percentage,increaserPercentage])
     return (
+    <Element name="highlight"> 
         <div className={classes.highlight_wrapper}>
             <div className={classes.highlight}>
                 <h1>Highlights</h1>
@@ -74,5 +76,6 @@ useEffect(() => {
                   </Slide>
             </div>
         </div>
+    </Element>
     )
 }

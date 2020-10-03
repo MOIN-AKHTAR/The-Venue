@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles,Button} from '@material-ui/core';
 import Zoom from 'react-reveal/Zoom';
+import {Element} from 'react-scroll';
 
 
 const useStyles=makeStyles({
@@ -61,7 +62,8 @@ const delay=[500,0,500];
 export default function Pricing() {
      const classes=useStyles();
     return (
-        <div className={classes.pricing_Wrapper}>
+    <Element name="pricing">
+        <div className={classes.pricing_Wrapper} id="pricing">
             <div className={classes.main_Wrapper}>
                 {price.map((p,index)=>(
                     <Zoom delay={delay[index]} key={index}>
@@ -75,5 +77,6 @@ export default function Pricing() {
                 ))}
             </div>
         </div>
+    </Element>
     )
 }

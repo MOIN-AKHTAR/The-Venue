@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core';
 import Calender from '../Assets/icons/calendar.png';
 import Location from '../Assets/icons/location.png';
 import Zoom from 'react-reveal/Zoom';
+import {Element} from 'react-scroll';
 
 const useStyles=makeStyles({
     wrapper:{
@@ -78,6 +79,7 @@ const useStyles=makeStyles({
 export default function Vunue() {
     const classes=useStyles();
     return (
+    <Element name="Venue">
         <div className={classes.wrapper}>
             <div className={classes.vunueWrapper}>
               <div className={classes.mainWrapper}>
@@ -116,5 +118,6 @@ export default function Vunue() {
               </div>
             </div>
         </div>
+    </Element>
     )
 }
