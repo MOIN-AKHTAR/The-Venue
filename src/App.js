@@ -6,6 +6,8 @@ import Featured from './Components/Featured';
 import Vunue from './Components/Vunue';
 import Highlight from './Components/Highlight';
 import Pricing from './Components/Pricing';
+import Location from './Components/Location';
+import Footer from './Components/Footer';
 import  './App.css';
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
       <Vunue/>
       <Highlight/>
       <Pricing/>
+      <Location/>
+      <Footer/>
     </div>
     </ThemeProvider>
   );
